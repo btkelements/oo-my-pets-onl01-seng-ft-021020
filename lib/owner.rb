@@ -14,6 +14,14 @@ class Owner
     return "I am a #{@species}."
   end
   
+  def self.count
+    self.all.count
+  end
+  
+  def self.reset_all
+    self.all.clear
+  end
+  
   def self.all
     @@all
   end
