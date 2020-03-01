@@ -8,4 +8,9 @@ class Owner
     @name = name
     @species = species
     @@all << self
+  end
+  
+  def self.all
+    @@all
+  end
 end
